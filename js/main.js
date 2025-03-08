@@ -1,10 +1,3 @@
-/**
- *	Isti - Digital Agency HTML Template
- *	Author: CodeeFly
- *	Author URL: http://themeforest.net/user/codeefly
- *	Copyright © by codeefly. All Rights Reserved.
- **/
-
 (function ($) {
   "use strict";
   console.clear();
@@ -905,5 +898,8 @@
   $(document).ready(function () {
     isti.preloader();
     isti.init();
+    // emailjs.init({
+    //   publicKey: "Sg5FuNXyRmutJE",
+    // });
   });
 })(jQuery);
