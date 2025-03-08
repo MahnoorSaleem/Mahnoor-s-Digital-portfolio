@@ -568,7 +568,7 @@ button:focus {
 .tf__banner_img::after {
   position: absolute;
   content: "";
-  background: url(../images/circle.png);
+  background: url(../images/circle_new.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
