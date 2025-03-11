@@ -219,14 +219,14 @@
                     <li>
                       <a href="#"
                         ><i class="far fa-angle-double-right"></i
-                        ><span class="text_hover_animaiton"
+                        ><span
                           >AWS (<span>S3, Lambda, CloudFormation, AppSync, Cognito, CloudWatch, API Gateway, EventBridge, SNS</span>)</span>   
                         </a>
                     </li>
                     <li>
                       <a href="#"
                         ><i class="far fa-angle-double-right"></i
-                        ><span class="text_hover_animaiton"
+                        ><span
                           >NestJs</span
                         ></a
                       >
@@ -234,7 +234,7 @@
                     <li>
                       <a href="#"
                         ><i class="far fa-angle-double-right"></i
-                        ><span class="text_hover_animaiton"
+                        ><span
                           >Redux</span
                         ></a
                       >
@@ -242,7 +242,7 @@
                     <li>
                       <a href="#"
                         ><i class="far fa-angle-double-right"></i>
-                        <span class="text_hover_animaiton"
+                        <span
                           >MongoDB</span
                         ></a
                       >
@@ -265,7 +265,7 @@
                     <li>
                       <a href="#"
                         ><i class="far fa-angle-double-right"></i
-                        ><span class="text_hover_animaiton"
+                        ><span
                           >Git</span
                         ></a
                       >
@@ -273,7 +273,7 @@
                     <li>
                       <a href="#"
                         ><i class="far fa-angle-double-right"></i
-                        ><span class="text_hover_animaiton"
+                        ><span
                           >pm2</span
                         ></a
                       >
@@ -281,7 +281,7 @@
                     <li>
                       <a href="#"
                         ><i class="far fa-angle-double-right"></i
-                        ><span class="text_hover_animaiton"
+                        ><span
                           >DOCKER</span
                         ></a
                       >
@@ -289,7 +289,7 @@
                     <li>
                       <a href="#"
                         ><i class="far fa-angle-double-right"></i>
-                        <span class="text_hover_animaiton"
+                        <span
                           >DOCKER</span
                         ></a
                       >
@@ -627,6 +627,8 @@
                       Submit<i class="fa-solid fa-arrow-right-long"></i>
                     </button>
                   </div>
+                  <p id="successMessage" class="hidden mt_15"><i class="fa-solid fa-thumbs-up"> </i> Your message has been sent successfully</p>
+                  <p id="errorMessage" class="hidden mt_15"><i class="fa-solid fa-thumbs-down"> </i> Your message failed to sent. Please try again!</p>
                 </div>
               </div>
             </form>
@@ -709,14 +711,22 @@
           message: message,  // User’s message
         }).then(
           function (response) {
-            alert("Email sent successfully!");
+            // alert("Email sent successfully!");
+            document.getElementById("successMessage").classList.remove("hidden");
+            document.getElementById("errorMessage").classList.add("hidden");
             document.querySelector(".tf__form").reset(); // Clear form after successful submission
           },
           function (error) {
-            alert("Failed to send email. Please try again.");
+            // alert("Failed to send email. Please try again.");
+            document.getElementById("errorMessage").classList.remove("hidden");
+            document.getElementById("successMessage").classList.add("hidden");
             console.error("EmailJS Error:", error);
           }
         );
+        setTimeout(() => {
+            document.getElementById("successMessage").classList.add("hidden");
+            document.getElementById("errorMessage").classList.add("hidden");
+        }, 60000);
       });
     });
 

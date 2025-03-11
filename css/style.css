@@ -2918,3 +2918,12 @@ html.lenis {
 .bg-fixed {
   background-attachment: fixed !important;
 }
+
+.tf__message p i {
+  color: var(--colorPrimary);
+  margin-right: 10px;
+}
+
+.hidden {
+  display: none;
+}
