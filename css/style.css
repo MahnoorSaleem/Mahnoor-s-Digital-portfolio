@@ -576,6 +576,7 @@ button:focus {
   height: 755px;
   top: 0px;
   left: 0px;
+  z-index: -1;
   animation: rotate_animi linear 60s infinite;
   -webkit-animation: rotate_animi linear 60s infinite;
 }
@@ -919,13 +920,12 @@ button:focus {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
-  /* font-size: 55px; */
-  /* color: var(--colorPrimary);
+/* font-size: 55px; */
+/* color: var(--colorPrimary);
   font-size: 40px;
   bottom: 70px;
   right: 35px;
 } */
-
 
 /* testimonial end */
 
@@ -1190,6 +1190,7 @@ button:focus {
 
 .tf__address_area p {
   line-height: 20px;
+  color: white;
   margin-bottom: 5px;
 }
 
