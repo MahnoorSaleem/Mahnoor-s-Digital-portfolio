@@ -599,8 +599,7 @@ button:focus {
   margin-bottom: 10px;
   color: var(--colorPrimary);
 }
-
-.tf__banner_text p {
+contact me .tf__banner_text p {
   max-width: 80%;
 }
 
