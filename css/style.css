@@ -560,8 +560,8 @@ button:focus {
 }
 
 .tf__banner_img {
-  width: 750px;
-  height: 750px !important;
+  width: 590px;
+  height: 590px !important;
   position: relative;
 }
 
@@ -2145,7 +2145,7 @@ contact me .tf__banner_text p {
 
 .tf__reach_details li i {
   color: var(--colorPrimary);
-  margin-right: 10px;
+  margin-right: 2.5px;
 }
 
 .tf__blog_details_img1 {

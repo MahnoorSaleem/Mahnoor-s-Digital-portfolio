@@ -7732,11 +7732,7 @@ fieldset:disabled .btn {
   justify-content: center !important;
 }
 .justify-content-between {
-  /* justify-content: space-between !important; */
-  flex-direction: row !important;
-  justify-content: space-evenly !important;
-  margin-left: 16rem !important;
- 
+  justify-content: space-between !important;
 }
 .justify-content-around {
   justify-content: space-around !important;
