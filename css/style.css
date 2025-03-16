@@ -1173,7 +1173,9 @@ contact me .tf__banner_text p {
 }
 
 .tf__single_address {
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
 }
 
 .tf__single_address span {
